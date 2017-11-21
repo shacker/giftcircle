@@ -18,7 +18,7 @@ we keep running the function until we get full distribution.
 def give():
     str = ''
 
-    givers = ['Leslie', 'Jamie', 'Avis', 'Jim', 'Amy', 'Scot', 'Mike', 'Miles', 'Buford', 'Momo']
+    givers = ['Leslie', 'Jamie', 'Avis', 'Jim', 'Amy', 'Scot', 'Mike', 'Miles', 'Buford', 'Momo', ]
     recipients = list(givers)  # Make a copy
 
     for idx, giver in enumerate(givers):
@@ -38,9 +38,10 @@ def give():
                 )
     return str
 
+
 # Keep trying until we get through the set with no failures
 results = give()
 while not results:
     results = give()
 
-print results
+print(results)
