@@ -19,7 +19,7 @@ def give():
     str = ''
 
     givers = ['Leslie', 'Jamie', 'Avis', 'Jim', 'Amy', 'Scot', 'Mike', 'Miles', 'Buford', 'Momo', ]
-    recipients = list(givers)  # Make a copy
+    recipients = givers.copy()  # Make a copy
 
     for idx, giver in enumerate(givers):
 
@@ -33,9 +33,7 @@ def give():
         else:
             # Remove this recipient from the pool and build the results string
             recipients.remove(recipient)
-            str = str + "{idx}: {giver} gives to {recipient}\n".format(
-                idx=idx+1, giver=giver, recipient=recipient
-                )
+            str = str + f"{idx+1}: {giver} gives to {recipient}\n"
     return str
 
 
