@@ -1,12 +1,12 @@
 # giftcircle.py
 
-### Holiday Python geekiness…
+## Holiday Python geekiness…
 
-If your family (or classroom or workplace) does “gift circles,” where everyone buys a gift for exactly one other person in the group, you could do (and probably already do) do the old “pull a name out of a hat” thing. But that takes setup time: writing down names, cutting them out, finding a hat, passing it around... shouldn’t this process be automated? Here’s a little Python script to get it done quick.
+If your family (or classroom or workplace) does “gift circles,” where everyone buys a gift for exactly one other person in the group, you could do (and probably already do) do the old “pull a name out of a hat” thing. But that takes setup: writing down names, cutting them out, finding a hat, passing it around... shouldn’t this process be automated? Here’s a little Python script to get it done quick.
 
-On my MacBook, the script runs for ten people in 27 milliseconds – think of all the egg nog you could drink in the time you save!
+On my MacBook, the script runs for ten people in 27 milliseconds – think of all the egg you could nog in the time you save!
 
-Populate the “recipients” list with real names and run `./gift-circle.py`.
+Populate the “recipients” list with real names and run `python /path/to/giftcircle.py`.
 
 Output looks like:
 
