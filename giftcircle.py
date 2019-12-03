@@ -21,7 +21,8 @@ givers = [
 ]
 
 recipients = givers.copy()
-report = []
+results = False
+num_attempts = 0
 
 
 def give():
@@ -37,15 +38,16 @@ def give():
         if giver == recipient:
             return False
         else:
-            line = f"{giver} -> {recipient}"
-            report.append(line)
+            report.append(f"{giver} -> {recipient}")
 
     return report
 
 
-results = give()
+# Keep trying until we get a successful run
 while not results:
+    num_attempts += 1
     results = give()
 
+print(f"Full random distribution in {num_attempts} attempt(s):")
 for elem in results:
     print(elem)
